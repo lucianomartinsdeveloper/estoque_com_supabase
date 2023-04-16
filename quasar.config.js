@@ -42,7 +42,7 @@ module.exports = configure(function (ctx) {
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
       'roboto-font', // optional, you are not bound to it
       'material-icons', // optional, you are not bound to it
-      'mdi-v5',
+      'mdi-v5'
     ],
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
@@ -81,11 +81,11 @@ module.exports = configure(function (ctx) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
     devServer: {
-      server: {
-        type: 'http'
-      },
-      open: true, // opens browser window automatically
-      port: 8080
+      // server: {
+      //   type: 'http'
+      // },
+      open: true // opens browser window automatically
+      // port: 8080
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
@@ -272,6 +272,6 @@ module.exports = configure(function (ctx) {
         chain.plugin('eslint-webpack-plugin')
           .use(ESLintPlugin, [{ extensions: ['js'] }])
       }
-    },
+    }
   }
 })
